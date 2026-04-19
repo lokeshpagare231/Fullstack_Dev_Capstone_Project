@@ -7,7 +7,7 @@ Dealerships Review Portal - Fullstack Software Developer Capstone Project
 Fullstack_Dev_Capstone_Project
 
 ## 🔗 GitHub Repository URL
-https://github.com/SiRipo92/Fullstack_Dev_Capstone_Project
+https://github.com/lokeshpagare231/Fullstack_Dev_Capstone_Project/edit/main/README.md
 
 ---
 
