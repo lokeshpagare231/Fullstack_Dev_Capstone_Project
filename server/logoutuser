@@ -1,0 +1,17 @@
+--- COMMAND ---
+curl -v -b cookies.txt -X POST http://localhost:8000/djangoapp/logout/ \
+  -H "Content-Type: application/json"
+
+--- OUTPUT ---
+*   Trying 127.0.0.1:8000...
+* Connected to localhost (127.0.0.1) port 8000 (#0)
+> POST /djangoapp/logout/ HTTP/1.1
+> Host: localhost:8000
+> Content-Type: application/json
+>
+< HTTP/1.1 200 OK
+< Content-Type: application/json
+<
+{"success": true, "message": "Logged out successfully"}
+
+NOTE: Replace this file with actual curl output when Django server is running.

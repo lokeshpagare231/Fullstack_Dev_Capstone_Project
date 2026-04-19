@@ -1,0 +1,21 @@
+--- COMMAND ---
+curl -v -c cookies.txt -X POST http://localhost:8000/djangoapp/login \
+  -H "Content-Type: application/json" \
+  -d '{"userName": "testuser", "password": "testpassword123"}'
+
+--- OUTPUT ---
+*   Trying 127.0.0.1:8000...
+* Connected to localhost (127.0.0.1) port 8000 (#0)
+> POST /djangoapp/login HTTP/1.1
+> Host: localhost:8000
+> Content-Type: application/json
+> Content-Length: 52
+>
+< HTTP/1.1 200 OK
+< Content-Type: application/json
+< Set-Cookie: sessionid=abc123...; expires=...; HttpOnly; Path=/; SameSite=Lax
+<
+{"userName": "testuser", "status": "Authenticated"}
+
+NOTE: Replace this file with actual curl output when Django server is running.
+Run: python manage.py createsuperuser to create a user first.

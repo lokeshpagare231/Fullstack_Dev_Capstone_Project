@@ -1,0 +1,31 @@
+--- COMMAND ---
+curl -v http://localhost:8000/djangoapp/get_cars
+
+--- OUTPUT ---
+*   Trying 127.0.0.1:8000...
+* Connected to localhost (127.0.0.1) port 8000 (#0)
+> GET /djangoapp/get_cars HTTP/1.1
+> Host: localhost:8000
+>
+< HTTP/1.1 200 OK
+< Content-Type: application/json
+<
+{"CarModels": [
+  {"CarModel": "Altima", "CarMake": "Nissan"},
+  {"CarModel": "Leaf", "CarMake": "Nissan"},
+  {"CarModel": "Rogue", "CarMake": "Nissan"},
+  {"CarModel": "C-Class", "CarMake": "Mercedes"},
+  {"CarModel": "E-Class", "CarMake": "Mercedes"},
+  {"CarModel": "GLE", "CarMake": "Mercedes"},
+  {"CarModel": "A4", "CarMake": "Audi"},
+  {"CarModel": "Q5", "CarMake": "Audi"},
+  {"CarModel": "TT", "CarMake": "Audi"},
+  {"CarModel": "Sorento", "CarMake": "Kia"},
+  {"CarModel": "Sportage", "CarMake": "Kia"},
+  {"CarModel": "Stinger", "CarMake": "Kia"},
+  {"CarModel": "Camry", "CarMake": "Toyota"},
+  {"CarModel": "Corolla", "CarMake": "Toyota"},
+  {"CarModel": "RAV4", "CarMake": "Toyota"}
+]}
+
+NOTE: Replace this file with actual curl output when Django server is running (DB auto-populates on first request).

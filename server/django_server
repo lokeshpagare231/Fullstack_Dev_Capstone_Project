@@ -1,0 +1,17 @@
+--- COMMAND TO GENERATE THIS OUTPUT ---
+cd server
+python manage.py runserver
+
+--- EXPECTED TERMINAL OUTPUT ---
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+April 20, 2026 - 10:00:00
+Django version 3.2.x, using settings 'djangoproj.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+
+[20/Apr/2026 10:00:05] "GET / HTTP/1.1" 200 1234
+
+NOTE: Replace this file with actual terminal output when Django server is running.

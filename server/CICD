@@ -1,0 +1,46 @@
+--- GitHub Actions Workflow Output ---
+Source: https://github.com/SiRipo92/Fullstack_Dev_Capstone_Project/actions
+
+Workflow: Lint Code
+Trigger: push to main branch
+
+--- Job 1: Lint Python Files ---
+Run actions/checkout@v3
+  Cloning into '/home/runner/work/Fullstack_Dev_Capstone_Project/Fullstack_Dev_Capstone_Project'...
+
+Run actions/setup-python@v4 (python-version: 3.12)
+  Successfully setup Python 3.12.x
+
+Run: python -m pip install --upgrade pip
+  Collecting pip...
+  Successfully installed pip 23.x.x
+
+Run: pip install flake8
+  Collecting flake8
+  Successfully installed flake8 6.x.x
+
+Run: pwd
+  /home/runner/work/Fullstack_Dev_Capstone_Project/Fullstack_Dev_Capstone_Project
+
+Run: find . -name "*.py" -exec flake8 {} +
+  (no output = all files pass linting)
+  Linted all the python files successfully
+
+--- Job 2: Lint JavaScript Files ---
+Run actions/checkout@v3
+  Cloning...done.
+
+Run actions/setup-node@v3 (node-version: 14)
+  Successfully setup Node.js 14.x
+
+Run: npm install jshint --global
+  added 1 package
+
+Run: find ./server/database -name "*.js" -exec jshint {} +
+  (no output = all files pass linting)
+  Linted all the js files successfully
+
+--- All jobs completed successfully ---
+
+NOTE: Visit https://github.com/SiRipo92/Fullstack_Dev_Capstone_Project/actions
+to get the actual GitHub Actions output and copy it into this file.

@@ -1,0 +1,18 @@
+--- COMMAND ---
+curl -v http://localhost:8000/djangoapp/reviews/dealer/1
+
+--- OUTPUT ---
+*   Trying 127.0.0.1:8000...
+* Connected to localhost (127.0.0.1) port 8000 (#0)
+> GET /djangoapp/reviews/dealer/1 HTTP/1.1
+> Host: localhost:8000
+>
+< HTTP/1.1 200 OK
+< Content-Type: application/json
+<
+{"status": 200, "reviews": [
+  {"id": 1, "name": "John Doe", "dealership": 1, "review": "Great service, very happy!", "purchase": true, "purchase_date": "2023-06-15", "car_make": "Toyota", "car_model": "Camry", "car_year": 2022, "sentiment": "positive"},
+  {"id": 2, "name": "Jane Smith", "dealership": 1, "review": "Average experience", "purchase": false, "purchase_date": "2023-05-10", "car_make": "Nissan", "car_model": "Altima", "car_year": 2021, "sentiment": "neutral"}
+]}
+
+NOTE: Replace this file with actual curl output when Django server + Node backend + sentiment analyzer are running.

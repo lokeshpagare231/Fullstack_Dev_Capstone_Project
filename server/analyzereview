@@ -1,0 +1,17 @@
+Command:
+curl -v "https://sentianalyzer.1qgxvy3nypne.us-south.codeengine.appdomain.cloud/analyze/Fantastic%20services"
+
+Output:
+*   Trying 169.xx.xx.xx...
+* TCP_NODELAY set
+* Connected to sentianalyzer.1qgxvy3nypne.us-south.codeengine.appdomain.cloud (169.xx.xx.xx) port 443 (#0)
+...
+> GET /analyze/Fantastic%20services HTTP/2
+> Host: sentianalyzer.1qgxvy3nypne.us-south.codeengine.appdomain.cloud
+> User-Agent: curl/7.68.0
+> Accept: */*
+>
+< HTTP/2 200
+< content-type: application/json
+<
+{"sentiment": "positive"}

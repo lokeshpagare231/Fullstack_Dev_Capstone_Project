@@ -1,0 +1,18 @@
+--- COMMAND ---
+curl -v "http://localhost:8000/djangoapp/get_dealers/Kansas"
+
+--- OUTPUT ---
+*   Trying 127.0.0.1:8000...
+* Connected to localhost (127.0.0.1) port 8000 (#0)
+> GET /djangoapp/get_dealers/Kansas HTTP/1.1
+> Host: localhost:8000
+>
+< HTTP/1.1 200 OK
+< Content-Type: application/json
+<
+{"status": 200, "dealers": [
+  {"id": 1, "city": "Olathe", "state": "Kansas", "short_name": "Olathe Best Cars", "full_name": "Best Cars Olathe", "address": "123 Main St", "zip": "66062", "lat": 38.88, "long": -94.82},
+  {"id": 5, "city": "Wichita", "state": "Kansas", "short_name": "Wichita Best Cars", "full_name": "Best Cars Wichita", "address": "456 Oak Ave", "zip": "67201", "lat": 37.69, "long": -97.33}
+]}
+
+NOTE: Replace this file with actual curl output when Django server + Node backend are running.
