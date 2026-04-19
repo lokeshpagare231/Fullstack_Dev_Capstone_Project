@@ -1,4 +1,8 @@
-# Dealerships Review Portal - Fullstack Software Developer Capstone Project
+# fullstack_developer_capstone (Dealerships Review Portal)
+
+Repository name: `xrwvm-fullstack_developer_capstone`  
+Project name: `fullstack_developer_capstone`
+
 by Sierra Ripoche
 
 ## Overview
